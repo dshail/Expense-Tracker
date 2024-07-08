@@ -1,0 +1,51 @@
+.expense-list-cont{
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    font-family: "Open Sans", sans-serif;
+    margin-bottom: 50px;
+}
+.expense-lists{
+    border: 2px solid black;
+    min-height: 480px;
+    width: 80%;
+    margin-top: 30px;
+}
+.expense-entry{
+    min-height: 120px;
+    width: 100%;
+    background-color: rgb(246, 246, 246);
+    box-sizing: border-box;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+}
+.expense-entry ul li{
+    list-style: none;
+    padding: 2px;
+}
+.expense-btn{
+    border: none;
+    background-color: #062820;
+    padding: 3px;
+    margin: 1px;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: all 0.7s ease;
+}
+.expense-btn:hover{
+    box-shadow: 50px 0 0 0 #074239 inset;
+}
+.exp-amt-tot{
+    margin-top: 10px;
+    font-size: 18px;
+}
+.checkboxes{
+    display: flex;
+    align-items: center;
+    width: 240px;
+    justify-content: space-evenly;
+}

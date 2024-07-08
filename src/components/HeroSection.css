@@ -1,0 +1,135 @@
+.hero-section {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    font-family: "Open Sans", sans-serif;
+    margin-top: 30px;
+}
+
+.hero-sec-cont {
+    width: 50%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 5px;
+    align-items: center;
+    animation: fadeInUp 1s ease forwards;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hero-sec-cont h1 {
+    font-size: 35px;
+    color: #073012;
+    background-color: #f7f7f7; /* Highlight background color */
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.hero-sec-cont h2 {
+    font-size: 20px;
+    color: rgb(45, 44, 44);
+    width: 90%;
+    background-color: rgba(0, 123, 255, 0.1); /* Highlight background color with transparency */
+    padding: 8px;
+    border-radius: 5px;
+}
+
+.hero-section img {
+    width: 50%;
+    animation: slideInRight 1s ease forwards;
+}
+
+@keyframes slideInRight {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.hero-section button {
+    border: 2px solid #183c1a;
+    padding: 7px 50px;
+    color: #073012;
+    background-color: white;
+    font-size: 20px;
+    letter-spacing: 1.5px;
+    border-radius: 4px;
+    margin-top: 15px;
+    cursor: pointer;
+    transition: all 0.7s ease;
+    font-weight: 600;
+}
+
+.hero-section button:hover {
+    color: white;
+    background-color: #183c1a;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+}
+
+@media only screen and (max-width: 900px) {
+    .hero-section {
+        margin-top: 40px;
+    }
+    .hero-sec-cont h1 {
+        font-size: 25px;
+    }
+
+    .hero-sec-cont h2 {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 670px) {
+    .hero-sec-cont h1 {
+        font-size: 22px;
+    }
+
+    .hero-sec-cont h2 {
+        font-size: 16px;
+    }
+
+    .hero-sec-cont button {
+        padding: 5px 30px;
+    }
+}
+
+@media only screen and (max-width: 470px) {
+    .hero-section {
+        flex-direction: column-reverse;
+        row-gap: 20px;
+    }
+    .hero-sec-cont {
+        width: 90%;
+    }
+    .hero-section img {
+        width: 90%;
+    }
+}
+.division {
+    background-color: rgb(175, 175, 175);
+    width: 90%;
+    height: 3px;
+    border-radius: 3px;
+    margin: auto;
+    margin-top: 50px;
+}
+#add-expense-form {
+    margin-top: 70px;
+}
